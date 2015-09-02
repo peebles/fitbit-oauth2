@@ -1,0 +1,25 @@
+{
+  "name": "fitbit-oauth2",
+  "version": "0.0.1",
+  "description": "Fitbit client API for OAuth2",
+  "main": "Fitbit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fitbit",
+    "oauth2"
+  ],
+  "author": "Andrew Peebles",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peebles/fitbit-oauth2.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.4.2",
+    "moment": "^2.10.6",
+    "request": "^2.61.0",
+    "simple-oauth2": "^0.2.1"
+  }
+}
