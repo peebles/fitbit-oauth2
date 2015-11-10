@@ -112,7 +112,7 @@ Fitbit.prototype.fetchToken = function( code, cb ) {
 	    var token = JSON.parse( body );
 	    token.expires_at = moment().add( token.expires_in, 'seconds' ).format( 'YYYYMMDDTHH:mm:ss' );
 	    self.token = token;
-	    if ( ! self.persist ) cb( null, token );
+	    if ( ! self.persist ) return cb( null, token );
 	    self.persist( self.token, function( err ) {
 		if ( err ) return cb( err );
 		cb( null, token );
